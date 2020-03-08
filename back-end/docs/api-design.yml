@@ -1,0 +1,26 @@
+# Game review blog posts
+/post
+  method: 'GET'
+  description: returns a list of review posts
+
+
+/post
+  method: 'POST'
+  description: creates a new review post
+  params:
+    title:
+      type: string
+    body:
+      type: string
+
+/post:id
+  method: 'GET'
+  description: returns a review post
+
+/post:id
+  method: 'PATCH'
+  description: updates a review post
+
+/post:id
+  method: 'DELETE'
+  description: deletes a review post
